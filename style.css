@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+body {
+  margin: 0 0 auto;
+  padding-bottom:  0px;
+  background: grey;
+  height: 100%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+.main-section {
+  background: url("https://unsplash.it/200?image=1067");
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  min-height: 100%;
+  padding-top: 0;
+  padding-bottom: 5px;
+  margin: 0 auto;
+}
+
+#title-app {
+  postion: relative;
+  display: inline;
+  float: right;
+  margin-right: 7%;
+  margin-top: 1.66%;
+  font-size: 24px;
+  color: #d24760;
+  font-family: 'Shrikhand', cursive;
+  text-shadow: 0px 2px 1px rgba(0,0,0,0.3);
+  text-transform: uppercase;
+  
+}
+
+.switch {
+  positon: relative;
+  display: inline-block; 
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {  
+  display: none;
+}
+
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider{
+  background-color: #232323;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #232323;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round{
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#toggle {
+  position: absolute;
+  top: 35px;
+  left: 34px;
+  font-size: 12px;
+  text-transform: uppercase;
+  
+}
+
+
+#temp {
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+  font-size: 225px;
+  color: rgba(0,0,0,0.7);
+  text-shadow: 0px 4px 1px rgba(0,0,0,0.3);
+  letter-spacing: -10px;
+  margin-left: auto;
+  
+  
+ 
+  
+}
+
+.degree {
+  
+  font-size: 75px;
+  position: relative;
+  margin-left: 3px;
+}
+
+#icon {
+ padding-right: 10px;
+
+}
+
+#name {
+  position: relative;
+  text-align: center;
+  top: -30px;  
+  padding-bottom: 50px;
+  color: black;
+  font-size: 27px;
+  font-weight: 500;
+  text-transform: uppercase;
+  
+}
+
+footer{
+  position: relative;
+  margin: 0 auto;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  color: white;
+  background-color: black;
+  
+  
+}
+
+#footer-txt {
+  padding-top: 15px;
+}
